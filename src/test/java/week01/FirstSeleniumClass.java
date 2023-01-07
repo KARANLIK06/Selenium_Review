@@ -20,5 +20,8 @@ public class FirstSeleniumClass {
 
         driverChrome.get("https://www.google.com");
         driverEdge.get("https://practice.cydeo.com");
+
+        driverChrome.close();
+        driverEdge.close();
     }
 }
