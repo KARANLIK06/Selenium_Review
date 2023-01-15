@@ -32,7 +32,7 @@ public class Methods {
         if(title.equals("Wooden spoon - Etsy")){
             System.out.println("Test is passed");
         }else {
-            System.out.println("Test is failed.");
+            System.out.println("Test is failed");
         }
 
 
