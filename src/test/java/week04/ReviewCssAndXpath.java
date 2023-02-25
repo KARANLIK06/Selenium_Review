@@ -34,7 +34,15 @@ public class ReviewCssAndXpath {
             //tagName[.='text'] (same as //tagName[text()='text’], . represents text)
             //*[@attribute='value’] ( use * when we don't want use tag name)
             go from parent to child
+            we use / to go from parent to child
+            //tagName[@attribute='value']/tagName
+            we also can go from child to parent using /..
+            childElement/..    //li[@class='list-group-item']/..
+            we can go between siblings using /preceding  or following siblings method
+            following-sibling::tagName
+            preceding-sibling::tagName
          */
+
 
     }
 }
