@@ -12,15 +12,19 @@ public class StaleElementReferenceException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("https://www.google.com/");
+        driver.get("https://practice.cydeo.com/");
 
-        WebElement gmail = driver.findElement(By.linkText("Gmail"));
+        WebElement gmail = driver.findElement(By.xpath("//a[.='Home']"));
 
         System.out.println(gmail.getText());
 
         driver.navigate().refresh();
-         gmail = driver.findElement(By.linkText("Gmail"));
 
         System.out.println(gmail.getText());
+
+
+        WebElement home = driver.findElement(By.xpath("//a[.='Home']"));
+
+        System.out.println(home.getText());
     }
 }
